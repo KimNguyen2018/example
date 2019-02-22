@@ -1,59 +1,33 @@
-package chapter9;
-
-import java.util.Date;
-
+package chapter10;
 public class Account {
-    private int id;
-    private double balance;
-    private double annualInterestRate =0;
-    private Date dateCreated;
+    private int id; 
+    private double balance =0, withdraw = 0, deposit= 0;    
     
-    // no-arg constructor
-    Account(){}
     
-    // constructor that creates an account with id and balance;
-    Account(int newId, double newBalance){
-        id = newId;
-        balance = newBalance;
-    }
+    public Account(){};
     
-    // accessor method  and mutator method
-    public void Id(int newId){
-        id = newId;
-    };
-       
-    double Balance(double newBalance){                
-        return newBalance;
+    public Account(int idAc, double balc){            
+            id = idAc;
+            balance = balc;
     };
     
-    public void getAnnualInterestRate(double rate){
-        annualInterestRate = rate;
-    };
-     void initDate(){   
-        dateCreated = new Date();
-        System.out.println("Date that creates the account: " + dateCreated.toString());
+   
+    public int getId(int currId){
+        id = currId;
+        return id;
     }
-
-    double getMonthlyInterestRate(double newRate){
-       annualInterestRate = newRate;
-       return((annualInterestRate / 12)/100); 
+            
+    public double getBalance(double balc) {
+        balance = balc;
+        return balance;
     }
-    
-    double getMonthlyInterest(double newBalance, double Rate){
-       double interest;
-       balance = newBalance;
-       interest = balance * getMonthlyInterestRate(Rate);
-       return interest;
+            
+    public double Deposit(double amount){
+        return (amount);   
     }
     
-        double withdraw(double amount){
-        return amount;
+    double Withdraw(double amount){
+        return (amount);
     }
-    
-    double deposit(double amount){
-        return amount;
-    }
-
-    
     
 }
