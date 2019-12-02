@@ -1,3 +1,6 @@
+/**
+Author: Kim Nguyen
+*/
 package chapter10;
 public class Account {
     private int id; 
