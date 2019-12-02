@@ -1,3 +1,6 @@
+/** Author: Kim Nguyen
+Practise on extending class 
+*/
 package chapter11;
 public class Faculty extends Employee {
     int officeHours;
