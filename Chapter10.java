@@ -1,3 +1,7 @@
+/**
+Author: Kim Nguyen
+*/
+
 package chapter10;
 
 import java.util.Scanner;
